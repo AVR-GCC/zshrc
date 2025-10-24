@@ -115,6 +115,8 @@ export POSTGRES_USER="postgres"
 export POSTGRES_PASSWORD="12345678"
 export POSTGRES_HOST="localhost"
 
+export LANG=en_IL.UTF-8
+
 if [ -f ~/.zshrc_private ]; then
   source ~/.zshrc_private
 fi
