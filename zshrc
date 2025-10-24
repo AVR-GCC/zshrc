@@ -105,3 +105,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:~/.local/bin"
 export PATH="$PATH:/usr/local/go/bin"
+
+# postgres details
+export DATABASE_USER="postgres"
+export DATABASE_PASSWORD="12345678"
+export DATABASE_HOST="localhost"
+
+export POSTGRES_USER="postgres"
+export POSTGRES_PASSWORD="12345678"
+export POSTGRES_HOST="localhost"
