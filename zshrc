@@ -115,6 +115,10 @@ export POSTGRES_USER="postgres"
 export POSTGRES_PASSWORD="12345678"
 export POSTGRES_HOST="localhost"
 
+# Mason Language servers
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
+export PATH="$HOME/.nvm/versions/node/v20.19.0/bin/typescript-language-server:$PATH"
+
 export LANG=en_IL.UTF-8
 
 if [ -f ~/.zshrc_private ]; then
