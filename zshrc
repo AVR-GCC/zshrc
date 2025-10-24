@@ -115,6 +115,9 @@ export POSTGRES_USER="postgres"
 export POSTGRES_PASSWORD="12345678"
 export POSTGRES_HOST="localhost"
 
+# Claud code
+export PATH="$HOME/.claude/bin:$PATH"
+
 # Mason Language servers
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH="$HOME/.nvm/versions/node/v20.19.0/bin/typescript-language-server:$PATH"
