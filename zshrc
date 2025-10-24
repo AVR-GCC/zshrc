@@ -126,6 +126,9 @@ export PATH="$HOME/.asdf/shims:$PATH"
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH="$HOME/.nvm/versions/node/v20.19.0/bin/typescript-language-server:$PATH"
 
+# Ocaml Opam env
+[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
 nvimo() {
     # Get the current directory
     local current_dir=$(pwd)
