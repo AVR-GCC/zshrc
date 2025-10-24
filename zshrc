@@ -126,6 +126,30 @@ export PATH="$HOME/.asdf/shims:$PATH"
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH="$HOME/.nvm/versions/node/v20.19.0/bin/typescript-language-server:$PATH"
 
+nvimo() {
+    # Get the current directory
+    local current_dir=$(pwd)
+    
+    # Split horizontally (new pane below)
+    tmux split-window -h
+    
+    # Resize the new pane to ~25% of the screen
+    tmux resize-pane -R 55
+    
+    # Navigate to the original directory in the new pane
+    tmux send-keys "cd '$current_dir'" C-m
+    
+    # Start opencode
+    tmux send-keys "opencode" C-m
+    
+    # Return focus to the top pane (with nvim)
+    tmux select-pane -L
+
+    # Open neovim in the current pane
+    nvim "$@"
+    
+}
+
 export LANG=en_IL.UTF-8
 
 if [ -f ~/.zshrc_private ]; then
