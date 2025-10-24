@@ -115,6 +115,10 @@ export POSTGRES_USER="postgres"
 export POSTGRES_PASSWORD="12345678"
 export POSTGRES_HOST="localhost"
 
+if [ -f ~/.zshrc_private ]; then
+  source ~/.zshrc_private
+fi
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
