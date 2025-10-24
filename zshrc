@@ -118,6 +118,10 @@ export POSTGRES_HOST="localhost"
 # Claud code
 export PATH="$HOME/.claude/bin:$PATH"
 
+# ASDF (Elixir version manager)
+export PATH="$HOME/.asdf/bin:$PATH"
+export PATH="$HOME/.asdf/shims:$PATH"
+
 # Mason Language servers
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH="$HOME/.nvm/versions/node/v20.19.0/bin/typescript-language-server:$PATH"
